@@ -30,7 +30,6 @@ happy_quotes = [
 
 # Create function for tweeting
 def HappyItUp():
-
     # Tweet a random quote
     api.update_status(random.choice(happy_quotes))
 
