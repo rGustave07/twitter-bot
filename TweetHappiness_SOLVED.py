@@ -5,7 +5,6 @@ import time
 import json
 import random
 import os
-from config import *
 
 
 consumer_key = os.environ['consumer_key']
