@@ -24,9 +24,9 @@ happy_quotes = [
     "Now and then it's good to pause in our pursuit of happiness and just be happy. - Guillaume Apollinaire"]
 
     # Twitter credentials
-    auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-    auth.set_access_token(access_token, access_token_secret)
-    api = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_token_secret)
+api = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
 
 # Create function for tweeting
 def HappyItUp():
