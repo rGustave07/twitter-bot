@@ -23,14 +23,13 @@ happy_quotes = [
     "The happiness of your life depends upon the quality of your thoughts. - Marcus Aurelius",
     "Now and then it's good to pause in our pursuit of happiness and just be happy. - Guillaume Apollinaire"]
 
-
-# Create function for tweeting
-def HappyItUp():
-
     # Twitter credentials
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
     api = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
+
+# Create function for tweeting
+def HappyItUp():
 
     # Tweet a random quote
     api.update_status(random.choice(happy_quotes))
